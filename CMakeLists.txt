@@ -52,12 +52,12 @@ IF( (NOT mmal_LIBS ) OR (NOT mmalutil_LIBS) OR (NOT mmalcore_LIBS) )
 ENDIF()
 
 #If opencv installed, creates the libraspicam_cv library module
-FIND_PACKAGE(OpenCV)
-IF(OpenCV_FOUND)
-  include_directories(${OpenCV_INCLUDE_DIRS})
-  SET(LIB_COMPONENTS ${LIB_COMPONENTS} ${PROJECT_NAME}_cv)
-  SET(PROJECT_CV_CREATED_FLAG "YES")  
-ENDIF()
+#FIND_PACKAGE(OpenCV)
+#IF(OpenCV_FOUND)
+#  include_directories(${OpenCV_INCLUDE_DIRS})
+#  SET(LIB_COMPONENTS ${LIB_COMPONENTS} ${PROJECT_NAME}_cv)
+#  SET(PROJECT_CV_CREATED_FLAG "YES")  
+#ENDIF()
 
 
  
